@@ -28,4 +28,4 @@ y para tener en claro las actividades realizadas en cada semana o las actividade
 
 # Enlaces de trabajo utilizados 
 Trello: https://trello.com/b/l3fHM5Hr/proyecto-desarrollo-de-software
-Documento en Drive: https://docs.google.com/document/d/1Pp--eVQas9nfPAErq-7LvAuhc0bl0PgH/edit?usp=sharing&ouid=116452602319890849653&rtpof=true&sd=true
+
