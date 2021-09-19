@@ -20,7 +20,7 @@ Modulo de gestion de vendedores
 Modulo de gestion de ingreso al sistema de información
 Modulo de gestion de usuarios y roles
 
-#Ceremonias de Scrum utilizadas
+# Ceremonias de Scrum utilizadas
 
 Daily Scrum
 Sprint Planning
