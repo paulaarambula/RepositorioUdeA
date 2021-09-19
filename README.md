@@ -19,3 +19,4 @@ Modulo para registrar el estado de ventas
 Modulo de gestion de vendedores 
 Modulo de gestion de ingreso al sistema de información
 Modulo de gestion de usuarios y roles
+
