@@ -20,3 +20,12 @@ Modulo de gestion de vendedores
 Modulo de gestion de ingreso al sistema de información
 Modulo de gestion de usuarios y roles
 
+# descripción del primer sprint
+Se realiza la creación del repositorio junto con la asignación  de los roles para cada uno de los integrantes
+los roles de desarrollador, analista, product owner, administrador de BD y scrum master fueron definidos exitosamente
+Todo lo anterir se ha realizado aplicando la metodología Scrum
+y para tener en claro las actividades realizadas en cada semana o las actividades a  realizar se crea u n Trello
+
+# Enlaces de trabajo utilizados 
+Trello: https://trello.com/b/l3fHM5Hr/proyecto-desarrollo-de-software
+
