@@ -11,3 +11,12 @@ Integrantes
 Se propone analizar, diseñar y construir una aplicación software que permita 
 controlar las ventas físicas y virtuales de una empresa de manufactura y 
 hacerles el correspondiente seguimiento. 
+
+# Modulos necesarios para el desarrollo del proyecto 
+
+Modulo de administrador de ventas 
+Modulo para registrar el estado de ventas 
+Modulo de gestion de vendedores 
+Modulo de gestion de ingreso al sistema de información
+Modulo de gestion de usuarios y roles
+
