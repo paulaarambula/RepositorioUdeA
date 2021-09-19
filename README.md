@@ -7,4 +7,7 @@ Integrantes
 1143990422 - Daniel Stiven Pineda García
 1010223519 - Paula Andrea Vargas Arámbula
 
-
+# Descripción de nuestro proyecto 
+Se propone analizar, diseñar y construir una aplicación software que permita 
+controlar las ventas físicas y virtuales de una empresa de manufactura y 
+hacerles el correspondiente seguimiento. 
