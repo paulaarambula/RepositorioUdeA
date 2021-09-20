@@ -25,3 +25,9 @@ Modulo de gestion de usuarios y roles
 Daily Scrum
 Sprint Planning
 Sprint Review
+
+
+# Descripción primer Sprint
+Se realiza la creación del repositorio junto con la asignación de los roles para cada uno de los integrantes
+los roles de desarrollador, analista, product owner, administrador BD y scrum master fueron definidos exitosamente
+Todo lo anterior se ha realizado aplicando la metodología Scrum y para tener en claro las actividades realizadas en cada semana o las actividades a realizar se crea un Trello.
