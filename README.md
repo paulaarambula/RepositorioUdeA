@@ -31,3 +31,7 @@ Sprint Review
 Se realiza la creación del repositorio junto con la asignación de los roles para cada uno de los integrantes
 los roles de desarrollador, analista, product owner, administrador BD y scrum master fueron definidos exitosamente
 Todo lo anterior se ha realizado aplicando la metodología Scrum y para tener en claro las actividades realizadas en cada semana o las actividades a realizar se crea un Trello.
+
+# Enlaces de trabajo utilizados
+Trello:  https://trello.com/b/l3fHM5Hr/proyecto-desarrollo-de-software
+Documento Drive:  https://docs.google.com/document/d/1Pp--eVQas9nfPAErq-7LvAuhc0bl0PgH/edit?usp=sharing&ouid=116452602319890849653&rtpof=true&sd=true
