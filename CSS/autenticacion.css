@@ -1,0 +1,32 @@
+h1{
+    margin:0;
+}
+section{      
+    font-size: 18px;
+    color: rgb(26, 22, 22);
+    border-radius: 15px;
+    background-color: #f2f2f2;
+    text-align: center;
+    border-width:1px;
+    border-color:rgba(0, 0, 0, 0.459);
+    border-style:solid;
+    width: 400px;
+    height: 400px;
+    margin: 100px auto;
+}
+
+section button{
+    background-color: rgb(16, 16, 32);
+    border-radius: 4px;
+    height: 50px;
+    width: 300px;
+    color: white;
+    font-weight: bold;
+}
+section button:hover{
+    border: 2 px solid black;
+}
+body {
+    background-color: #cccccc;
+    
+  }
