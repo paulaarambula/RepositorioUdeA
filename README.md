@@ -1,5 +1,5 @@
 # RepositorioUdeA
-Integrantes 
+#Integrantes 
 1108931626 - Yeison Eduardo Castillo Suarez
 1102381894 - Karen Alexandra Montaño Archila
 1051451130 - Darien Rafael Pájaro Miranda
@@ -32,6 +32,17 @@ Se realiza la creación del repositorio junto con la asignación de los roles pa
 los roles de desarrollador, analista, product owner, administrador BD y scrum master fueron definidos exitosamente
 Todo lo anterior se ha realizado aplicando la metodología Scrum y para tener en claro las actividades realizadas en cada semana o las actividades a realizar se crea un Trello.
 
+#Descripción segundo Sprint
+
+Se realiza la creación de las interfaces gráficas de la aplicación:
+1. Interfaz de usuario
+2. Interfaz para el registro de productos 
+3. Interfaz del maestro de las ventas
+4. Interfaz para el registro de ventas
+5. Interfaz de usuario para el maestro de ventas
+6. Interfaz de usuario de usuarios
+
+
 # Enlaces de trabajo utilizados
 Trello:  https://trello.com/b/l3fHM5Hr/proyecto-desarrollo-de-software
-Documento Drive:  https://docs.google.com/document/d/1Pp--eVQas9nfPAErq-7LvAuhc0bl0PgH/edit?usp=sharing&ouid=116452602319890849653&rtpof=true&sd=true
+Carpeta Drive: https://drive.google.com/drive/folders/11TnnnRhfP6ULGCkQqpIAxhByAPzwgWgp?usp=sharing
