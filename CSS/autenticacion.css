@@ -1,0 +1,52 @@
+h1{
+    margin:0;
+}
+section {      
+    font-size: 18px;
+    color: rgb(26, 22, 22);
+    border-radius: 15px;
+    background-color: #f2f2f2;
+    text-align: left;
+    border-width:1px;
+    border-color:rgba(0, 0, 0, 0.459);
+    border-style:solid;
+    width: 400px;
+    height: 400x;
+    margin: 80px auto;
+    padding: 40px;
+}
+
+section button {
+    background-color: rgb(16, 16, 32);
+    border-radius: 4px;
+    height: 200px;
+    width: 300px;
+    color: white;
+    font-weight: bold;
+    margin: 20px;
+}
+section button:hover{
+    border: 2px solid black;
+    cursor: pointer;
+    scale: 10px;
+}
+body {
+    background-color: #cccccc;   
+  }
+
+.button {
+    margin-bottom: 100px;
+}
+
+.title {
+    text-align: center;
+
+}
+
+.Button {
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    padding: 5px 10px;
+
+}
