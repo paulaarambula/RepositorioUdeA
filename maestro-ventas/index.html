@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Ventas</title>
+</head>
+<body>
+    <div id="container">
+        <div>
+            <form id="form">
+                <label class="element" for="search"> Buscar</label>
+                <input class="element" type="text" name="search" id="search">
+                <input class="element" type="button" name="btnSearch" value=" " id="btnsearch">
+                <label class="element" for="field">Campo</label>
+                <select class="element" name="field" id="field">
+                    <option>Todo</option>
+                    <option value="value">Valor venta</option>
+                    <option value="amount">Cantidad</option>
+                    <option value="price">Precio</option>
+                    <option value="date">Fecha</option>
+                    <option value="document">Documento cliente</option>
+                    <option value="name">Nombre cliente</option>
+                    <option value="seller">Vendedor</option>
+                </select>
+            </form>
+        </div>
+        <div id="list">
+            <ol>
+                <li> Valor venta | Cantidad | Precio |&nbsp&nbsp Fecha &nbsp | Documento | Nombre | Vendedor</li>
+                <li> $8000 &nbsp &nbsp &nbsp &nbsp | 2 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp | 
+                    $4000 &nbsp| 25/09/21 | &nbsp 1002121 &nbsp &nbsp| Juan &nbsp&nbsp&nbsp&nbsp&nbsp| Federico <button> .</button> </li>
+                <li> $16500  &nbsp &nbsp &nbsp | 3 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp | 
+                    $5500 &nbsp| 25/09/21 | &nbsp 1002121 &nbsp &nbsp| Pedro &nbsp&nbsp&nbsp| Federico <button> .</button></li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
