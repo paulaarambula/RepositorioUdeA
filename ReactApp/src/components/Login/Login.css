@@ -49,6 +49,25 @@
     
 }
 
+button{
+    width: 200px;
+    font-weight: bold;
+    text-align: center;
+    border:1px solid rgb(39, 131, 252);  
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(39, 131, 252);
+    box-shadow: 0.2px 0 4px rgb(0,0,0,.2);
+    margin: auto;
+    color: white;   
+    padding: auto;    
+}
+button img{
+    float: left;
+    border-color: solid rgb(39, 131, 252);
+    padding: 2px;    
+    border-radius: 5px;
+}
 section button:hover{
     border: 2 px solid black;
 }

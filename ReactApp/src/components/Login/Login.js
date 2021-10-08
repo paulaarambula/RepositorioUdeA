@@ -1,4 +1,5 @@
 import React from "react";
+import LogoGoogle from "../Img/logo-google.jpg"
 import { useAuth0 } from "@auth0/auth0-react";
 
 import "./Login.css";
@@ -13,7 +14,8 @@ export const Login = () => {
         sesión con Google.
       </p>
       <button onClick={() => loginWithRedirect()}>
-        Iniciar sesión con Google
+      <img src={LogoGoogle} width="30px" /> 
+         Iniciar sesión con Google
       </button>
     </div>
   );
