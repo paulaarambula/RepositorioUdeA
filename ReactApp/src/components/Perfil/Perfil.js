@@ -1,5 +1,6 @@
 import React from "react";
 import { useAuth0 } from "@auth0/auth0-react";
+import "./Perfil.css"
 
 export const Profile = () => {
   const { user, isAuthenticated, isLoading } = useAuth0();
@@ -10,9 +11,9 @@ export const Profile = () => {
 
   return (
     isAuthenticated && (
-      <div>
-        <img src={user.picture} alt={user.name} />
-        <h2>{user.name}</h2>
+      <div className="profile">
+        <img className="profile-picture" src={user.picture} alt={user.name} />
+        <h3>{user.name}</h3>
         <p>Email: {user.email}</p>
       </div>
     )

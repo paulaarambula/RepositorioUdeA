@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  text-align: center;  
 }
 
 .App-logo {
@@ -31,9 +31,9 @@ body{
   display: flex;
   justify-content: center;
   color: rgb(17, 17, 17);
-  border-top: 6px solid #1a150e;
+  border-top: 6px solid #030616;
   border-bottom: 2px solid #03045E;
-  background: linear-gradient(#0077B6, white);
+  background: linear-gradient(#03071e, white);
 }
 .App-nav{
   width: auto;   

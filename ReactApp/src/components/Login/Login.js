@@ -9,6 +9,7 @@ export const Login = () => {
 
   return (
     <div>
+      <h3>Bienvenido a Sky Running</h3>
       <p>
         Es necesario iniciar sesión para acceder al sistema, para ello inicie
         sesión con Google.

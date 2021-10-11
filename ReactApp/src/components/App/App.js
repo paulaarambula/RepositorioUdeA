@@ -3,7 +3,7 @@ import Logo from "../Img/logsinfondo.png";
 import "./App.css";
 import Inicio from "../Inicio/Inicio";
 //import RegistroProducto from "../Producto/Producto"
-import Producto from "../Producto/Producto";
+
 
 function App() {  
   return (
@@ -15,18 +15,13 @@ function App() {
             <h1 className="title">SKY RUNNING</h1>
         </header>
           <nav className="App-nav">
-            <Link style={{textDecoration: 'none', color: 'white' }} to="/inicio"><b>| Inicio |</b></Link>            
-            <Link style={{textDecoration: 'none', color: 'white' }} to="/productos"><b> Productos |</b></Link>
-            <Link style={{textDecoration: 'none', color: 'white' }} to="/registro-ventas"><b> Ventas |</b></Link>
+            <Link style={{textDecoration: 'none', color: 'white' }} to="/"><b>| Inicio |</b></Link> 
           </nav>
         </div>
         <Switch>        
           
-          <Route path="/inicio">
+          <Route path="/">
             <Inicio />                  
-          </Route>
-          <Route path="/productos">
-            <Producto />                  
           </Route>
         </Switch>        
       </Router>     

@@ -1,0 +1,30 @@
+.options {
+    background-color: #020316;
+    padding: 10px;
+    border-radius: 20px 0px 20px 0px;
+    font-size: 15px;
+    width: 1px;
+    text-align: left;
+    margin: 15px 50px 50px 50px;    
+    height: 10px;
+    border: none;
+}
+  
+.profile-section {
+  text-align: center;
+  border: solid 1px rgb(201, 201, 201);
+  border-radius: 10px;
+  box-shadow: 1px 0 4px rgba(1, 46, 77, 0.5);
+  width: 400px;
+  margin: 0px 0px 0px 50px;
+  float: left;
+  background-color: #e2ece9;
+}
+.option-section{
+    border: none;
+    height: 100px;
+    margin: 50px 10px 10px 50px;
+    text-align: left;
+    box-shadow: none;
+    
+}
