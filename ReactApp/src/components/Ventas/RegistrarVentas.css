@@ -1,0 +1,26 @@
+table{
+    background-color: #f2f2f2;
+    text-align: left;
+    border-collapse: collapse;
+    width: 100%;    
+}
+th{
+    text-align: center; 
+    text-decoration:underline;       
+    padding: 0px;
+    color: #0a201b;
+    font-size: 120%;
+}
+section{
+    width: 600px;
+    margin: 100px auto;
+    box-shadow: 1px 0 4px rgb(0,0,0,.5);
+}
+.volver{
+    margin: 10px;
+    float: left;
+}
+td{
+    padding: 5px;
+    margin: 0px;
+}

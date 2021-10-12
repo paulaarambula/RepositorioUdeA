@@ -15,7 +15,7 @@ export const Login = () => {
         sesión con Google.
       </p>
       <button onClick={() => loginWithRedirect()}>
-      <img src={LogoGoogle} width="30px" /> 
+      <img src={ LogoGoogle } width="30px" /> 
          Iniciar sesión con Google
       </button>
     </div>

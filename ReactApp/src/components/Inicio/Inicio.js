@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Logout from "../Login/Logout";
 import Profile from "../Perfil/Perfil";
 import Producto from "../Producto/Producto";
+import Ventas from "../Ventas/Ventas"
 import Login from "../Login/Login";
 import "./Inicio.css";
 
@@ -33,7 +34,7 @@ export default function Inicio() {
                 <Link
                   className="options"
                   style={{ textDecoration: "none", color: "white" }}
-                  to="/registro-ventas"
+                  to="/ventas"
                 >
                   <b> Ventas </b>
                 </Link>
@@ -42,6 +43,9 @@ export default function Inicio() {
             <Switch>
               <Route path="/productos">
                 <Producto />
+              </Route> 
+              <Route path="/ventas">
+                <Ventas />
               </Route>
             </Switch>
           </Router>

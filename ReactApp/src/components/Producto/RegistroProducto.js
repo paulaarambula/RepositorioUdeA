@@ -8,7 +8,7 @@ export default function RegistroProducto() {
     <div>
       <body>
         <Router>          
-          <button>
+          <button className="volver">
             <Link
               style={{ textDecoration: "none", color: "white" }}
               to="/productos"
