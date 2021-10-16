@@ -1,0 +1,30 @@
+{
+  "name": "repositorioudea",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon api",
+    "dev": "nodemon api"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulaarambula/RepositorioUdeA.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paulaarambula/RepositorioUdeA/issues"
+  },
+  "homepage": "https://github.com/paulaarambula/RepositorioUdeA#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.11",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
+}
