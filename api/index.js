@@ -18,10 +18,25 @@ mongoose.connect(process.env.MONGODB_URL, {
 }).then(db => console.log('DB is conected'))
 .catch(err => console.log(err))
 
+
 app.use(morgan('dev'))
 app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({extended:false}))
+//app.use(mongoose())
+/*mongoose.connect('mongodb://localhost',{ 
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+   })*/
+
+   /*const db = mongoose.connection;
+   db.once("open", (_) => {
+     console.log("Database connected:", process.env.MONGODB_URL);
+   });
+   
+   db.on("error", (err) => {
+     console.error("connection error:", err);
+   });*/
 
 app.use('/venta', ventasRouter);
 app.use('/user', usersRouter);
