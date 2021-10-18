@@ -1,6 +1,6 @@
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
-const User = require('./../models/venta-model');
+const Venta = require('./../models/venta-model');
 
 const createVentaFromData = async (response, venta) => {
   if (!venta.numero_venta) {
@@ -105,8 +105,15 @@ const createVentaFromData = async (response, venta) => {
 // POST
 const createVenta = async (request, response) => {
   const venta = request.body;
-  const resultado = await createVentaFromData(response, venta);
-  return response.status(resultado.status || 200).send(resultado);
+  try {
+    const resultado = await createVentaFromData(response, venta);
+    console.log(resultado.status)
+    return response.status(resultado.status || 200).send(resultado);
+  }catch(err){
+    console.log(200);
+    return response.send(200)
+  }
+  
 };
 
 // GET

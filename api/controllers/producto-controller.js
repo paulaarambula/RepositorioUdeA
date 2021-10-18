@@ -1,6 +1,6 @@
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
-const User = require('./../models/producto-model');
+const Producto = require('./../models/producto-model');
 
 const createProductoFromData = async (response, producto) => {
   if (!producto.id_producto) {
@@ -56,8 +56,14 @@ const createProductoFromData = async (response, producto) => {
 // POST
 const createProducto = async (request, response) => {
   const producto = request.body;
-  const resultado = await createProductoFromData(response, producto);
-  return response.status(resultado.status || 200).send(resultado);
+  try {
+    const resultado = await createProductoFromData(response, producto);
+    console.log(resultado.status)
+    return response.status(resultado.status || 200).send(resultado);
+  }catch(err){
+    console.log(200);
+    return response.send(200)
+  }
 };
 
 // GET
@@ -81,6 +87,8 @@ const readProductoData = async (request, response) => {
   const producto = await Producto.findOne({ _id: request.productoId });
   if (producto) {
     return response.send(producto);
+  }else{
+    return response.send({status:200})
   }
   return response.status(404).send({ error: 'No existe el producto' });
 };

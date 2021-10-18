@@ -13,8 +13,15 @@ const ventasRouter = require('./routers/venta-router')
 const usersRouter = require('./routers/user-router');
 const productosRouter = require('./routers/producto-router');
 
-mongoose.connect(process.env.MONGODB_URL, {
-    useNewUrlParser:true
+/*mongoose.connect('mongodb://localhost:8000', {
+    useNewUrlParser:true,
+    useUnifiedTopology: true
+}).then(db => console.log('DB is conected'))
+.catch(err => console.log(err))*/
+
+mongoose.connect('mongodb+srv://alexis:0000@cluster0.m9ws5.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
+    useNewUrlParser:true,
+    useUnifiedTopology: true
 }).then(db => console.log('DB is conected'))
 .catch(err => console.log(err))
 
@@ -40,7 +47,7 @@ app.use(express.urlencoded({extended:false}))
 
 app.use('/venta', ventasRouter);
 app.use('/user', usersRouter);
-app.use('/producto', productosRouter);
+app.use('/producto',productosRouter);
 
 app.get('*', (request, response) => {
     return response.send('Not found!');
@@ -50,4 +57,5 @@ app.set('port', process.env.PORT || 8000);
 
 app.listen(app.get('port'), () =>{
     console.log(`Localhost:${app.get('port')}`);
+    //console.log(app.get('url'));
 })
