@@ -1,0 +1,58 @@
+const Producto = require('./../models/product-model')
+
+const productos =[];
+
+const createProduct = (request, response) =>{
+    const producto = request.body;
+    if (!producto.product) {
+        return response.status(400).send({ ok: false, error :"falta el nombre del producto" });        
+    }
+    
+    if (!producto.descripcion) {
+        return response.status(400).send({ ok: false, error :"falta descripción" });        
+      }
+      if (!producto.valor) {
+        return response.status(400).send({ ok: false, error :"falta valor" });
+      }
+      if (!producto.estado_producto) {
+        return response.status(400).send({ ok: false, error :"falta estado" });
+      }
+    console.log(producto);
+    const newProduct = new Producto(producto);
+    newProduct.save((error, result)=>{
+        if(error){
+            return response.status(500).send({error})
+        }
+        return response.send(result)
+    });  
+}
+
+const readProduct = (request, response) =>{
+    const id = request.params.id;
+    
+    const filter = {};
+    if(id){
+        filter._id = id;
+    }
+    Producto.find(filter, (error, result)=>{
+        if(error){
+            return response.status(500).send({error})
+        }
+        return response.send(result)
+    })   
+}
+
+const updateProduct = (request, response) =>{
+    
+}
+
+const deleteProduct = (request, response) =>{
+    
+}
+
+module.exports = {
+    createProduct,
+    readProduct,
+    updateProduct,
+    deleteProduct,
+}
