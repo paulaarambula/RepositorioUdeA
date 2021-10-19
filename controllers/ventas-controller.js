@@ -68,18 +68,37 @@ const createVenta = (request, response) => {
 
 const readVenta = (request, response) => {
   const id = request.params.id;
-  if (id) {
-    return response.send({
-      ok: true,
-      ventas: ventas.filter((venta) => {
-        return venta.id.toString() === id;
-      }),
-    });
-  }
-  return response.send({ ok: true, ventas });
+
+  const filter = {};
+  if(id){
+    filter._id = id;
+}
+Venta.find(filter, (error, result)=>{
+    if(error){
+        return response.status(500).send({error})
+    }
+    return response.send(result)
+})   
 };
 
-const updateVenta = (request, response) => {};
+const updateVenta = (request, response) => {
+  const id = request.params.id;
+    if(!id){
+        return response.status(400).send({error: 'No hay id para modificar'})
+    }
+  
+    Venta.updateOne({ _id: id }, request.body, (error, result)=>{
+        if(error){
+            return response.status(500).send({error})
+        }
+        Venta.find({ _id: id }, (error, result)=>{
+            if(error){
+                return response.status(500).send({error})
+            }
+            return response.send(result)
+        })        
+    })
+};
 
 const deleteVenta = (request, response) => {};
 
