@@ -100,7 +100,18 @@ const updateVenta = (request, response) => {
     })
 };
 
-const deleteVenta = (request, response) => {};
+const deleteVenta = (request, response) => {
+  const id = request.params.id;
+    if(!id){
+        return response.status(400).send({error: 'No hay id para eliminar'})
+    }
+    Venta.remove( { _id: id }, (error, result) =>{
+        if(error){
+            return response.status(500).send({error});
+        }
+        return response.send(result);
+    })
+};
 
 module.exports = {
   createVenta,

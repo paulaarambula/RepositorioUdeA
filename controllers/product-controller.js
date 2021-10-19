@@ -57,15 +57,24 @@ const updateProduct = (request, response) =>{
         }
         Producto.find({ _id: id }, (error, result)=>{
             if(error){
-                return response.status(500).send({error})
+                return response.status(500).send({error});
             }
-            return response.send(result)
+            return response.send(result);
         })        
     })
 }
 
 const deleteProduct = (request, response) =>{
-    
+    const id = request.params.id;
+    if(!id){
+        return response.status(400).send({error: 'No hay id para eliminar'})
+    }
+    Producto.remove( { _id: id }, (error, result) =>{
+        if(error){
+            return response.status(500).send({error});
+        }
+        return response.send(result);
+    })
 }
 
 module.exports = {
