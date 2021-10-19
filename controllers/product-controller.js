@@ -43,7 +43,25 @@ const readProduct = (request, response) =>{
 }
 
 const updateProduct = (request, response) =>{
-    
+    const id = request.params.id;
+    if(!id){
+        return response.status(400).send({error: 'No hay id para modificar'})
+    }
+
+    //primer parametro es el filtro del elemento que se va a modificar
+    //segundo parametro son los nuevos datos que se van a poner 
+    //tercer parametro es la funcion que va a entregar el error y el resultado 
+    Producto.updateOne({ _id: id }, request.body, (error, result)=>{
+        if(error){
+            return response.status(500).send({error})
+        }
+        Producto.find({ _id: id }, (error, result)=>{
+            if(error){
+                return response.status(500).send({error})
+            }
+            return response.send(result)
+        })        
+    })
 }
 
 const deleteProduct = (request, response) =>{
