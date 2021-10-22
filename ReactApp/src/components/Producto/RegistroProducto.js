@@ -1,14 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Producto from "./Producto";
 import "./RegistroProducto.css";
 
 export default function RegistroProducto() {
+  const [valorIdProducto, cambiarValorIdProducto] = useState('');
+  const [descripcionProducto, cambiarDescripcionProducto] = useState('');
+  const [valorUnitarioProducto, cambiarValorUnitarioProducto] = useState('');
+ 
   return (
     <div>
       <body>
         <Router>          
-          <button className="volver">
+          <button className={"volver"}>
             <Link
               style={{ textDecoration: "none", color: "white" }}
               to="/productos"
@@ -35,53 +39,68 @@ export default function RegistroProducto() {
                   </th>
                 </tr>
                 <tr>
-                  <td id="col1">
-                    <label for="product ID">
+                  <td id={"col1"}>
+                    <label for={'product ID'}>
                       <h4>ID del Producto</h4>
                     </label>
                   </td>
                   <td>
                     <input
-                      id="product ID"
-                      name="product ID"
-                      placeholder="Ingresar ID de usuario"
-                      required="true"
+                      id={'product ID'}
+                      type = { 'text' }
+                      name={'product ID'}
+                      placeholder={'Ingresar ID de usuario'}
+                      required={'true'}
+                      value={valorIdProducto}
+                      onChange = {(event)=>{
+                        cambiarValorIdProducto(event.target.value);
+                      }}
                     />
                   </td>
                 </tr>
                 <tr>
                   <td id="col1">
-                    <label for="description">
+                    <label for={'description'}>
                       <h4>Descripción del Producto</h4>
                     </label>
                   </td>
                   <td>
                     <textarea
-                      id="description"
-                      name="description"
-                      placeholder="Escriba la descripción del producto"
-                      required="true"
+                      id={'description'}
+                      type = { 'text' }
+                      name={'description'}
+                      placeholder={'Escriba la descripción del producto'}
+                      required={'true'}
+                      value={descripcionProducto}
+                      onChange={(event)=>{
+                        cambiarDescripcionProducto(event.target.value);
+                      }}
                     ></textarea>
                   </td>
                 </tr>
                 <tr>
-                  <td id="col1">
-                    <label for="unit value">
+                  <td id={"col1"}>
+                    <label for={'unit value'}>
                       <h4>Valor Unitario ($)</h4>
                     </label>
                   </td>
                   <td>
                     <input
-                      id="unit value"
-                      name="unit value"
-                      placeholder="Ingresar valor unitario del producto"
-                      required="true"
+                      id={'unit value'}
+                      type = { 'text' }
+                      name={'unit value'}
+                      placeholder={"Ingresar valor unitario del producto"}
+                      required={"true"}
+                      value={valorUnitarioProducto}
+                      onChange={(event)=>{
+                        cambiarValorUnitarioProducto(event.target.value);
+                      }}
                     />
                   </td>
                 </tr>
                 <tr>
                   <td id="col1">
-                    <label for="status">
+                    <label for={'status'}>
                       <h4>Estado del Producto</h4>
                     </label>
                   </td>

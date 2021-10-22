@@ -11,7 +11,7 @@ function App() {
       <Router>
         <div>
         <header className="App-header">
-            <img className="App-logo" src={Logo} />
+            <img className="App-logo" src={Logo} alt={"logo"}/>
             <h1 className="title">SKY RUNNING</h1>
         </header>
           <nav className="App-nav">
