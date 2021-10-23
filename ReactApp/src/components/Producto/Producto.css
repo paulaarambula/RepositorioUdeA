@@ -1,0 +1,8 @@
+.botonProducto{
+    color: white;
+    background-color: rgb(0, 0, 66);
+    padding: 0.3rem;
+    margin: 5px;
+    text-decoration: none;   
+    border-radius: 5px;
+}

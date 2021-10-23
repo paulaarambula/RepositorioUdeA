@@ -6,6 +6,7 @@ import Profile from "../Perfil/Perfil";
 import Producto from "../Producto/Producto";
 import Ventas from "../Ventas/Ventas"
 import Login from "../Login/Login";
+import AppContextComponent from "../AppContext/AppContext";
 import "./Inicio.css";
 
 export default function Inicio() {
@@ -41,12 +42,14 @@ export default function Inicio() {
               </section>
             </div>
             <Switch>
+              <AppContextComponent>
               <Route path="/productos">
                 <Producto />
               </Route> 
               <Route path="/ventas">
                 <Ventas />
               </Route>
+              </AppContextComponent>
             </Switch>
           </Router>
         </>

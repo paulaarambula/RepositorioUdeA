@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import AppContextComponent from "../AppContext/AppContext";
 import Logo from "../Img/logsinfondo.png";
 import "./App.css";
 import Inicio from "../Inicio/Inicio";
@@ -18,11 +19,12 @@ function App() {
             <Link style={{textDecoration: 'none', color: 'white' }} to="/"><b>| Inicio |</b></Link> 
           </nav>
         </div>
-        <Switch>        
-          
+        <Switch>      
+          <AppContextComponent>
           <Route path="/">
             <Inicio />                  
           </Route>
+          </AppContextComponent>
         </Switch>        
       </Router>     
     </div>
