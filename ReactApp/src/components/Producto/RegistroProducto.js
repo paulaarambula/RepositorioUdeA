@@ -113,8 +113,7 @@ const RegistroProducto = (props) => {
       </button>
 
       <Link
-        className={"volver"}
-        style={{ textDecoration: "none", color: "black" }}
+        className={"volver"}        
         to="/productos"
       >
         <b>Volver</b>

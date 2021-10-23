@@ -1,7 +1,13 @@
 
 const customFetch = async (url, options) => {
-    const req = await fetch(url, options);
-    return req.json();
+    try {
+        const req = await fetch(url, options);
+        const json = await req.json();
+        return json;
+      } catch (e) {
+        console.error(e);
+        return null;
+      }
 };
 
 export const httpGet = async (url) => {
