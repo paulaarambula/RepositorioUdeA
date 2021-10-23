@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import RegistrarVenta from "./RegistrarVenta";
+import ListaVentas from "./ListaVentas";
 
 export default function RegistroProducto() {
   return (
@@ -17,7 +18,7 @@ export default function RegistroProducto() {
         <button>
           <Link
             style={{ textDecoration: "none", color: "white"}}
-            to="/lista-producto"
+            to="/lista-ventas"
           >
             <b>Ver ventas</b>
           </Link>
@@ -25,6 +26,9 @@ export default function RegistroProducto() {
         <Switch>
             <Route path="/registro-venta">
                 <RegistrarVenta />
+            </Route>
+            <Route path="/lista-venta">
+                <ListaVentas />
             </Route>
         </Switch>
       </Router>

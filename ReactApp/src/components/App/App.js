@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import AppContextComponent from "../AppContext/AppContext";
 import Logo from "../Img/logsinfondo.png";
 import "./App.css";
 import Inicio from "../Inicio/Inicio";
@@ -11,18 +12,19 @@ function App() {
       <Router>
         <div>
         <header className="App-header">
-            <img className="App-logo" src={Logo} />
+            <img className="App-logo" src={Logo} alt={"logo"}/>
             <h1 className="title">SKY RUNNING</h1>
         </header>
           <nav className="App-nav">
             <Link style={{textDecoration: 'none', color: 'white' }} to="/"><b>| Inicio |</b></Link> 
           </nav>
         </div>
-        <Switch>        
-          
+        <Switch>      
+          <AppContextComponent>
           <Route path="/">
             <Inicio />                  
           </Route>
+          </AppContextComponent>
         </Switch>        
       </Router>     
     </div>
