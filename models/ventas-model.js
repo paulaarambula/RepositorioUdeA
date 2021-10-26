@@ -3,44 +3,40 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
 const ventaSchema = new Schema ({
-    fecha: {
+    fechaVenta: {
         type: String,
         required: true,
         match: new RegExp('^[0-9]{4}-[0-9]{2}-[0-9]{2}$')
     },
-    id_vendedor: {
+    idVendedor: {
         type: String,
         required: true,
     },
-    nombre_vendedor: {
+    nombreVendedor: {
         type: String,
         required: true,
     },
-    id_cliente: {
+    idCliente: {
         type: String,
         required: true,
     },
-    nombre_cliente: {
+    nombreCliente: {
         type: String,
         required: true,
     },
-    id_producto: {
+    valorIdProducto: {
         type: String,
         required: true,
     },
-    nombre_producto: {
+    cantidadProducto: {
         type: String,
         required: true,
     },
-    cantidad_producto: {
+    valorUnitario: {
         type: String,
         required: true,
     },
-    valor_unitario_producto: {
-        type: String,
-        required: true,
-    },
-    valor_total: {
+    valorVenta: {
         type: String,
         required: true,
     },
