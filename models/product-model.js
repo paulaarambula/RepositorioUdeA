@@ -11,11 +11,11 @@ const productSchema = new Schema({
         type: String,
         required: true,
     },
-    valor: {
+    valorUnitario: {
         type: String,
         required: true,
     },
-    estado_producto: {
+    estadoProducto: {
         type: String,
         required: true,
     },

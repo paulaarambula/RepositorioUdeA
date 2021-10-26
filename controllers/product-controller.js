@@ -11,10 +11,10 @@ const createProduct = (request, response) =>{
     if (!producto.descripcion) {
         return response.status(400).send({ ok: false, error :"falta descripción" });        
       }
-      if (!producto.valor) {
+      if (!producto.valorUnitario) {
         return response.status(400).send({ ok: false, error :"falta valor" });
       }
-      if (!producto.estado_producto) {
+      if (!producto.estadoProducto) {
         return response.status(400).send({ ok: false, error :"falta estado" });
       }
     console.log(producto);
