@@ -4,9 +4,6 @@ const productos =[];
 
 const createProduct = (request, response) =>{
     const producto = request.body;
-    if (!producto.product) {
-        return response.status(400).send({ ok: false, error :"falta el nombre del producto" });        
-    }
     
     if (!producto.descripcion) {
         return response.status(400).send({ ok: false, error :"falta descripción" });        

@@ -3,10 +3,6 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
 const productSchema = new Schema({
-    product: {
-        type: String,
-        required: true,
-    },
     descripcion: {
         type: String,
         required: true,
